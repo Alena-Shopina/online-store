@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Общие стили */
+body{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    background: black; /* Темно-сірий фон */
+    color: white;
+}
+
+.container{
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+/* Загальний стиль кнопки */
+.btn {
+    display: flex;
+    align-items: center; /* Вирівнювання по вертикалі */
+    justify-content: center; /* Вирівнювання по горизонталі */
+    
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    color: white;
+    background: rgba(219, 201, 201, 0.2);
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    
+    transition: all 0.3s ease;
+}
+
+.btn--small {
+    font-weight: bold;
+    display: inline-block; /* Встановлює ширину відповідно до вмісту */
+    
+    padding: 10px 20px; /* Зменшено відступи */
+    font-size: 18px;
+    text-transform: uppercase;
+    
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    
+    transition: all 0.3s ease;
+}
+
+
+.btn:hover,
+.btn--small:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.btn--load-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn--load-more:hover {
+    background: #8A2BF2;
+    transform: scale(1.05);
+}
+
+
+
+p{
+    font-size: 24px;
+    color: white;
+    line-height: 1.8;
+}

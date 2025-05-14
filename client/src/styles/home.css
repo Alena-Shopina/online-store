@@ -1,0 +1,361 @@
+/*Головна сторінка*/
+
+.about-advantages {
+  background: linear-gradient(135deg, #000000, #0e0d0d,#000000,#000000, #9400D3, #FF1493,#000000,#000000,#0e0d0d,#000000);
+  color: white;
+  padding: 80px 5%;
+}
+
+.welcome {
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 195px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
+              url("../assets/img/WELCOME.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.welcome__text {
+  max-width: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+
+/* Стилі заголовку та підзаголовку */
+.welcome__title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #8A2BF2;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.welcome__subtitle {
+  font-size: 22px;
+  color: #ddd;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    padding: 90px 20px;
+    background-attachment: scroll;
+    background-position: left center;
+  }
+
+  .welcome__text {
+    position: static;
+    transform: none;
+    right: auto;
+    top: auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .welcome__title {
+    font-size: 24px;
+  }
+
+  .welcome__subtitle {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+
+
+/* ===Про нас=== */
+.about-us {
+  color: white;
+  padding: 30px 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-us__title {
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  width: max-content;
+  flex: 1;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.about-us__title span {
+  text-decoration: underline;
+  text-decoration-color: #9400D3;
+  text-decoration-thickness: 4px;
+}
+
+.about-us__content {
+  flex: 2;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 60%;
+}
+
+.about-us__text {
+  font-size: 24px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-us__team {
+  font-weight: bold;
+  font-size: 22px;;
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .about-us__title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .about-us__content {
+    max-width: 100%;
+    font-size: 18px;
+  }
+
+  .about-us__text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .about-us__team {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+
+
+/*Переваги*/
+.advantages {
+
+  padding-top: 50px;
+
+  text-align: center;
+}
+
+.advantages__title {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  
+  /* Тінь, щоб текст краще читався */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+/* Грід для розташування по 2 в ряд */
+.advantages__list {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Два елементи в ряд */
+  gap: 60px; /* Більший відступ між карточками */
+  justify-content: center;
+  max-width: 1100px; /* Трохи ширше */
+  margin: 0 auto;
+}
+
+.advantage {
+
+    max-width: 500px; /* Зробимо карточки трохи ширшими */
+  position: relative; /* Щоб можна було розмістити текст поверх */
+  overflow: hidden; /* Забираємо зайві відступи */
+    border-radius: 12px;
+  box-shadow: 0 4px 10px rgb(122, 61, 134, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advantage:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px #9400D3;
+}
+
+/* Фотки стали більшими */
+.advantage img {
+  width: 100%;
+  height: 100%; /* Картинка на всю висоту */
+  object-fit: cover; /* Щоб не розтягувалась */
+}
+
+.advantage h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Затемнення для читабельності */
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.advantage p {
+  font-size: 16px; /* Зменшений розмір */
+  color: #ccc; /* Світло-сірий для кращої читабельності */
+  line-height: 1.4; /* Покращений міжрядковий інтервал */
+  max-width: 90%; /* Текст не розтягується на всю ширину */
+  margin: 0 auto; /* Центрування тексту */
+}
+
+
+
+/* ===Товари=== */
+.products {
+  background: linear-gradient(135deg,#0e0d0d,#0e0d0d,#000000,#000000);
+  color: white;
+  padding: 80px 5%;
+  text-align: center;
+}
+
+/* Заголовок */
+.products__title {
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.products__title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #FF1493 50%, #9400D3 100%);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Контейнер для скролу */
+.products__scroll-wrapper {
+  overflow-x: auto; /* Горизонтальний скрол */
+  -webkit-overflow-scrolling: touch; /* Для iOS */
+  padding: 0 20px; /* Відступи */
+}
+
+/* Контейнер для товарів */
+.products__grid {
+  display: flex;
+  gap: 60px;
+  flex-wrap: nowrap; /* Щоб не переносити товари на новий рядок */
+  justify-content: flex-start; /* Товари будуть розміщені зліва */
+}
+
+/* Картка товару */
+.product-card {
+  background: linear-gradient(135deg, #1c1c1c, #252525);
+  text-align: center;
+  width: 320px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px #FF1493;
+  padding-bottom: 20px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color:rgb(255, 255, 255);
+  margin: 15px 0 5px;
+}
+
+.product-card p {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px #FF1493;
+}
+
+/* Адаптивність */
+@media (max-width: 1200px) {
+  .product-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .products__grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap; /* Не переносимо елементи */
+  }
+
+  .product-card {
+    min-width: 260px;
+    flex: 0 0 auto;
+    border-radius: 12px;
+  }
+
+  .products__scroll-wrapper::-webkit-scrollbar {
+    height: 6px; /* Висота скролу */
+  }
+
+  .products__scroll-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgb(196, 7, 70,0.3);
+    border-radius: 10px;
+  }
+  .products__title {
+    font-size: 28px; /* Зменшити розмір шрифту на мобільних */
+    margin-bottom: 30px; /* Зменшити відступ між заголовком і товарами */
+  }
+}
+
+
+
+
