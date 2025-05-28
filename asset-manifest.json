@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/online-store/static/css/main.c50fb125.css",
+    "main.js": "/online-store/static/js/main.481f5fe3.js",
+    "static/js/453.419a5d54.chunk.js": "/online-store/static/js/453.419a5d54.chunk.js",
+    "static/media/WELCOME.png": "/online-store/static/media/WELCOME.978f02664d9d8ef28d25.png",
+    "static/media/tovar_1.png": "/online-store/static/media/tovar_1.d7d51ab379deb37d8df9.png",
+    "static/media/syns.jpg": "/online-store/static/media/syns.1f58a5869c7fc9e3bfc5.jpg",
+    "static/media/tovar_3.webp": "/online-store/static/media/tovar_3.4e34746d70c01ac097e6.webp",
+    "static/media/toch.jpg": "/online-store/static/media/toch.4ca8630b398f944d3c16.jpg",
+    "static/media/apps.jpg": "/online-store/static/media/apps.13d4e48fd056b8c6f339.jpg",
+    "static/media/design.jpg": "/online-store/static/media/design.5f72801f3e7d11b1cd95.jpg",
+    "static/media/instagram.png": "/online-store/static/media/instagram.661a8d22097791cf8c6d.png",
+    "static/media/tovar_2.webp": "/online-store/static/media/tovar_2.79c908078b0e2f2b5e64.webp",
+    "static/media/Lamp_2.webp": "/online-store/static/media/Lamp_2.da0c2ac109939baad6e7.webp",
+    "static/media/Lamp_4.webp": "/online-store/static/media/Lamp_4.0f8b8992d9705135cde3.webp",
+    "static/media/cart-icon.svg": "/online-store/static/media/cart-icon.e08e6d83005dac3de35309befb1f83cd.svg",
+    "index.html": "/online-store/index.html",
+    "main.c50fb125.css.map": "/online-store/static/css/main.c50fb125.css.map",
+    "main.481f5fe3.js.map": "/online-store/static/js/main.481f5fe3.js.map",
+    "453.419a5d54.chunk.js.map": "/online-store/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c50fb125.css",
+    "static/js/main.481f5fe3.js"
+  ]
+}
