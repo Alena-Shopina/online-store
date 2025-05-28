@@ -3,12 +3,12 @@ import "../styles/home.css"; // Підключаємо стилі
 import "../styles/general.css"; // Підключаємо стилі
 import "../styles/reset.css"; // Підключаємо стилі
 
-import touchPhoto from "../assets/img/toch.jpg";
-import appPhoto from "../assets/img/apps.jpg";
-import syncPhoto from "../assets/img/syns.jpg";
-import designPhoto from "../assets/img/design.jpg";
-import tovar1 from "../assets/img/tovar_1.png";
-import tovar2 from "../assets/img/tovar_2.webp";
+import touchPhoto from "../assets/img/toch.png";
+import appPhoto from "../assets/img/apps.png";
+import syncPhoto from "../assets/img/syns.png";
+import designPhoto from "../assets/img/design.png";
+import tovar1 from "../assets/img/tovar_1.webp";
+import tovar2 from "../assets/img/tovar_2.jpg";
 import tovar3 from "../assets/img/tovar_3.webp";
 
 const Home = () => {
@@ -39,17 +39,18 @@ const Home = () => {
           </h2>
           <div className="about-us__content">
             <p className="about-us__text">
-              LumiAura — це команда професіоналів, які створюють освітлення
-              нового покоління. Ми поєднуємо стиль, технології та інновації, щоб
-              змінювати ваш простір.
+              LumiAura — команда, що формує майбутнє освітлення. Ми поєднуємо
+              витонченість дизайну, розумні технології та інноваційні рішення,
+              щоб перетворити звичайний простір на місце натхнення.
             </p>
             <p className="about-us__text">
-              Наші лампи — це не просто джерело світла, а інструмент для
-              створення унікальної атмосфери. Ми не слідуємо трендам — ми їх
-              задаємо.
+              Наші світильники — це більше, ніж просто світло. Це атмосфера,
+              характер і настрій. Ми не орієнтуємось на тренди — ми створюємо
+              нові стандарти.
             </p>
             <p className="about-us__team">
-              Долучайтеся до LumiAura. Разом робимо світ яскравішим!
+              Станьте частиною спільноти LumiAura — разом ми відкриваємо нові
+              грані світла.
             </p>
           </div>
         </section>
@@ -95,7 +96,7 @@ const Home = () => {
               <div className="product-card">
                 <img src={tovar1} alt="Настільна LED лампа Crystal Rose" />
                 <h3 className="product-card__title">
-                  Настільна LED лампа Crystal Rose
+                  Напольна RGB лампа 60 см
                 </h3>
                 <p className="product-card__price">999 грн</p>
                 <a href="product1.html" className="btn btn--small">
@@ -105,7 +106,7 @@ const Home = () => {
               <div className="product-card">
                 <img src={tovar2} alt="Світильник Безкінечні тюльпани" />
                 <h3 className="product-card__title">
-                  Світильник Безкінечні тюльпани
+                  Дві RGB лампи для комп'ютерного столу
                 </h3>
                 <p className="product-card__price">1299 грн</p>
                 <a href="product2.html" className="btn btn--small">
@@ -115,7 +116,7 @@ const Home = () => {
               <div className="product-card">
                 <img src={tovar3} alt="Світильник ночник 3-D ведмедик" />
                 <h3 className="product-card__title">
-                  Світильник ночник 3-D ведмедик
+                  Напольна RGB лампа 100 см
                 </h3>
                 <p className="product-card__price">899 грн</p>
                 <a href="product3.html" className="btn btn--small">
